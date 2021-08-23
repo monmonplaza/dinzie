@@ -1,0 +1,8 @@
+.footer {
+  background-color: darken($yellow,15);
+  &__content {
+    text-align: center;
+    padding: 1rem 0;
+    color: $light
+  }
+}

@@ -1,0 +1,25 @@
+@mixin media-query($width) {
+  @media screen and (max-width: $width) {
+    @content;
+  }
+}
+
+@mixin transistion($duration: 0.5s) {
+  transition: $duration ease;
+}
+
+@mixin scrollbar() {
+  &::-webkit-scrollbar {
+    width: 1rem;
+  }
+
+  &::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px rgb(214, 214, 214);
+    border-radius: 1rem;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: $yellow;
+    border-radius: 1rem;
+  }
+}

@@ -1,0 +1,31 @@
+.btn {
+  border-radius: 2rem;
+  padding: 1rem 1.6rem;
+  border: none;
+  font-size: 1.4rem;
+  cursor: pointer;
+  transition: 0.5s ease;
+  text-decoration: none;
+  display: inline-block;
+  text-align: center;
+  text-transform: uppercase;
+  @include media-query($mobile) {
+    width: 100%;
+    font-size: 1.6rem;
+  }
+  &--dark {
+    background-color: $dark;
+    color: $light;
+    &:hover {
+      background-color: darken($dark, 5);
+    }
+  }
+
+  &--orange {
+    background-color: $orange;
+    color: $light;
+    &:hover {
+      background-color: darken($orange, 5);
+    }
+  }
+}

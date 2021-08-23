@@ -1,0 +1,58 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700;900&display=swap");
+
+@font-face {
+  font-family: "helvetica_neue_bold", sans-serif;
+  src: url(../fonts/HelveticaNeue-Bold.woff),
+    url(../fonts/HelveticaNeue-Bold.woff2);
+  font-weight: bold;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "helvetica_neue_medium", sans-serif;
+  src: url(../fonts/HelveticaNeue-Medium.woff),
+    url(../fonts/HelveticaNeue-Medium.woff2);
+  font-weight: 500;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "helvetica_neue", sans-serif;
+  src: url(../fonts/HelveticaNeue.woff), url(../fonts/HelveticaNeue.woff2);
+  font-weight: 400;
+  font-display: swap;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  color: $dark;
+  line-height: 1.4;
+  font-family: "helvetica_neue", sans-serif;
+  
+}
+.container {
+  max-width: 120rem;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+.snap__parent {
+  max-height: 100vh;
+  overflow-y: scroll;
+  scroll-snap-points-y: repeat(100vh);
+  scroll-snap-type: y mandatory;
+  .snap__child {
+    scroll-snap-align: start;
+    min-height: 100vh;
+  }
+}

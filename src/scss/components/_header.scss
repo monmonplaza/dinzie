@@ -1,0 +1,30 @@
+.header {
+  background-color: $dark;
+  color: $light;
+  &__wrapper {
+    grid-template-columns: 1fr 1fr;
+    @include media-query($mobile) {
+      padding: 1rem 0;
+      grid-template-columns: 1fr;
+      grid-gap: 0;
+    }
+  }
+
+  &__branding {
+    @include media-query($mobile) {
+      text-align: center;
+    }
+  }
+
+  &__info {
+    align-self: center;
+    justify-self: flex-end;
+    font-weight: bold;
+    h2 {
+      font-size: clamp(1.4rem, 4vw, 2rem);
+    }
+    @include media-query($mobile) {
+      justify-self: center;
+    }
+  }
+}

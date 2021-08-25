@@ -7,7 +7,7 @@ export const tabData = [
       "info": [
         {
           "prep": "20min",
-          "price": "Php 120.00",
+          "price": "120.00",
           "delivery": "10min"
         }
       ],
@@ -23,7 +23,7 @@ export const tabData = [
       "info": [
         {
           "prep": "10min",
-          "price": "Php 220.00",
+          "price": "220.00",
           "delivery": "30min"
         }
       ],
@@ -39,7 +39,7 @@ export const tabData = [
       "info": [
         {
           "prep": "10min",
-          "price": "Php 2650.00",
+          "price": "2650.00",
           "delivery": "30min"
         }
       ],
@@ -55,7 +55,7 @@ export const tabData = [
       "info": [
         {
           "prep": "15min",
-          "price": "Php 650.00",
+          "price": "650.00",
           "delivery": "10min"
         }
       ],
@@ -70,7 +70,7 @@ export const tabData = [
       "info": [
         {
           "prep": "5min",
-          "price": "Php 61150.00",
+          "price": "61150.00",
           "delivery": "10min"
         }
       ],

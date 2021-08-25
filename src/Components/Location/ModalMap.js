@@ -1,5 +1,5 @@
 import React from 'react'
-import { TiTimes } from 'react-icons/ti'
+// import { TiTimes } from 'react-icons/ti'
 const ModalMap = ({ showMap }) => {
     const { map, setMap } = showMap;
 

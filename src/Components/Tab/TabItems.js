@@ -1,14 +1,36 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import MsgSuccess from './MsgSuccess';
 const TabItems = ({ saveToObject, data, clickIsActive, index, isActiveTab }) => {
     const { cart, setCartItems } = saveToObject;
+    const [msgShow, setMsgShow] = React.useState(false);
+    const [order, setOrder] =React.useState(0)
+
+    function handleMsgShow() {
+        setMsgShow(!msgShow);
+        setTimeout(() => {
+            setMsgShow(false);
+        }, 2000)
+    }
+
+    function totalOrder (e) {
+        const itemPrice = Number(e.target.parentElement.querySelector('.food__price').innerHTML)
+        setOrder(prev => prev + itemPrice)
+    }
 
     const handleAddCart = (e) => {
         const orders = {
             name: e.target.parentElement.querySelector('.food__title').innerHTML,
             price: e.target.parentElement.querySelector('.food__price').innerHTML
         }
+       
         setCartItems([...cart, orders])
+
+        totalOrder(e);
+       
+        
+        handleMsgShow ();
+        
     }
 
     return (
@@ -38,8 +60,11 @@ const TabItems = ({ saveToObject, data, clickIsActive, index, isActiveTab }) => 
                     >Add to Card</Link>
                 </div>
             </div>
+            <MsgSuccess msgShow= {msgShow} />
         </>
     )
+
+
 }
 
 export default TabItems

@@ -1,6 +1,16 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 const TabItems = ({ saveToObject, data, clickIsActive, index, isActiveTab }) => {
+    const { cart, setCartItems } = saveToObject;
+
+    const handleAddCart = (e) => {
+        const orders = {
+            name: e.target.parentElement.querySelector('.food__title').innerHTML,
+            price: e.target.parentElement.querySelector('.food__price').innerHTML
+        }
+        setCartItems([...cart, orders])
+    }
+
     return (
         <>
             <div
@@ -24,7 +34,7 @@ const TabItems = ({ saveToObject, data, clickIsActive, index, isActiveTab }) => 
                     </ul>
                     <Link to="/"
                         className="btn btn--orange"
-                        onClick={saveToObject}
+                        onClick={handleAddCart}
                     >Add to Card</Link>
                 </div>
             </div>

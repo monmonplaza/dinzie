@@ -1,8 +1,7 @@
 import React from 'react'
 import { TiTimes } from 'react-icons/ti'
-const SidebarCart = ({ handleViewCart, viewCart, cartload }) => {
-
-    console.log(cartload);
+const SidebarCart = ({ handleViewCart, viewCart, orderList }) => {
+    console.log(orderList)
 
     return (
         <>
@@ -12,8 +11,8 @@ const SidebarCart = ({ handleViewCart, viewCart, cartload }) => {
                         <button className="close__btn" onClick={handleViewCart}><TiTimes /></button>
                         <h3>Your Cart</h3>
                         {
-                            cartload && cartload.map((order, key) => {
-
+                            orderList && orderList.map((order, key) => {
+                                console.log(order)
                                 return (
                                     <div className="order__block" key={key}>
                                         <ul>

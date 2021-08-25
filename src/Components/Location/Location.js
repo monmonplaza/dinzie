@@ -3,7 +3,13 @@ import { AiFillPhone, AiFillFacebook, AiFillInstagram, AiFillTwitterSquare } fro
 import { RiRoadMapFill } from 'react-icons/ri';
 import { Link } from 'react-router-dom';
 import { Steps } from './data';
-const location = () => {
+import ModalMap from './ModalMap';
+const location = ({ showMap }) => {
+    const { map, setMap } = showMap;
+
+    const handleMapLocation = () => {
+        setMap(!map)
+    }
 
     const lowOpacity = (e) => {
         const steps = document.querySelectorAll('.order__steps');
@@ -47,12 +53,6 @@ const location = () => {
                                     )
                                 })
                             }
-
-
-
-
-
-
                         </div>
 
                         <div className="order__block">
@@ -63,9 +63,11 @@ const location = () => {
 
                     </div>
 
-                    <div className="contact">
-                        <div className="contact__grid">
+                </div>
 
+                <div className="contact">
+                    <div className="container">
+                        <div className="contact__grid">
                             <div className="contact__box">
                                 <h3>Contact Us</h3>
                                 <p>We can deliver it for you or you can pick up your order</p>
@@ -95,13 +97,19 @@ const location = () => {
 
                             <div className="contact__box">
                                 <h3>Map Location</h3>
-                                <button><RiRoadMapFill /> <span>  View Map </span></button>
+                                <button onClick={handleMapLocation}><RiRoadMapFill /> <span>  View Map </span></button>
                             </div>
                         </div>
-
                     </div>
+
                 </div>
             </section>
+
+
+
+
+
+            <ModalMap showMap={showMap} />
         </>
     )
 }

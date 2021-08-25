@@ -1,5 +1,5 @@
 .order {
-    padding: 10rem 0;
+    padding: 10rem 0 0;
     min-height: 100vh;
     &__grid {
         display: grid;
@@ -88,7 +88,9 @@
 
 
 .contact {
-    margin-top: 10rem;
+    padding: 10rem 0;
+    background-color: #d1d1d1;
+ 
     &__grid {
         display: grid;
         grid-template-columns:2.5fr 1fr 1fr 1fr 1fr;
@@ -131,3 +133,56 @@
         }
     }
 }
+
+.map__modal {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    height: 100vh;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0,0,0,0.3);
+    z-index: 99999;
+    &__main {
+        width: 80rem;
+        max-width: 100%;
+        
+        background-color: $light;
+        border-radius: .5rem;
+        text-align: center;
+        padding: 3rem;
+        iframe {
+            width: 100%;
+            min-height: 60rem;
+            border: 1px solid #ccc;
+        }
+    }
+
+    h3 {
+        margin-bottom:3rem ;
+        font-size: 2rem;
+        font-weight: bold;
+    }
+
+    button {
+        border: none;
+        background-color: transparent;
+        margin-top: 2rem;
+        cursor: pointer;
+        color: $light;
+        background-color: $orange;
+        padding: .8rem 1.6rem;
+        border-radius: 5px;
+        transition: .5s ease;
+        &:hover {
+           background-color: darken($orange, 20);
+        }
+    }
+}
+
+
+.map__modal.open {
+    display: flex;
+  }

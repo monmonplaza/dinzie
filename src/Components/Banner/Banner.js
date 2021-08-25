@@ -4,15 +4,15 @@ import { FaCartPlus, FaFacebook, FaInstagram, FaTwitter } from 'react-icons/fa';
 import { ImQrcode } from 'react-icons/im';
 import { bannerData } from './data';
 import QRModal from '../QRModal/QRModal';
-import SidebarCart from '../SidebarCart/SidebarCart';
+// import SidebarCart from '../SidebarCart/SidebarCart';
 
-const Banner = ({ cart }) => {
+const Banner = ({ handleViewCart }) => {
 
   const [isModal, setModal] = React.useState(false);
   const handleIsModal = () => setModal(!isModal);
 
-  const [viewCart, setViewCart] = React.useState(false);
-  const handleViewCart = () => setViewCart(!viewCart);
+  // const [viewCart, setViewCart] = React.useState(false);
+  // const handleViewCart = () => setViewCart(!viewCart);
 
   return (
     <>
@@ -63,7 +63,7 @@ const Banner = ({ cart }) => {
       }
 
       <QRModal handleIsModal={handleIsModal} isModal={isModal} />
-      <SidebarCart handleViewCart={handleViewCart} viewCart={viewCart} cartload={cart} />
+      {/* <SidebarCart handleViewCart={handleViewCart} viewCart={viewCart} /> */}
     </>
   )
 }

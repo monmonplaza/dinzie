@@ -50,7 +50,7 @@ body {
   max-height: 100vh;
   overflow-y: scroll;
   scroll-snap-points-y: repeat(100vh);
-  scroll-snap-type: y mandatory;
+  // scroll-snap-type: y mandatory;
   .snap__child {
     scroll-snap-align: start;
     min-height: 100vh;

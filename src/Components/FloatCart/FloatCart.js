@@ -5,8 +5,6 @@ const FloatCart = ({ open, itemCount }) => {
   const { isOpen, setOpen } = open;
   const handleViewCart = () => setOpen(!isOpen);
 
-  const [isModal, setModal] = React.useState(false);
-  const handleIsModal = () => setModal(!isModal);
   return (
     <>
       <div className="floatcart" onClick={handleViewCart}>

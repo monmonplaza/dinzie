@@ -1,0 +1,46 @@
+[
+    {
+        "id": 0,
+        "main_img": "./images/menu_balatong.jpg",
+        "thumb_img": "./images/menu_balatong.jpg",
+        "title": "Balatong",
+        "prep": "20min",
+        "price": "120.00",
+        "delivery": "10min",
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo, doloremque. Commodi laudantium beatae odit ullam reiciendis ea, totam facere saepe.",
+        "status": ""
+    },
+    {
+        "id": 1,
+        "main_img": "./images/menu_gimbap.jpg",
+        "thumb_img": "./images/menu_gimbap.jpg",
+        "title": "Gimbap",
+        "prep": "20min",
+        "price": "120.00",
+        "delivery": "10min",
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo, doloremque. Commodi laudantium beatae odit ullam reiciendis ea, totam facere saepe.",
+        "status": ""
+    },
+    {
+        "id": 2,
+        "main_img": "./images/menu_buchi.jpg",
+        "thumb_img": "./images/menu_buchi.jpg",
+        "title": "Buchi",
+        "prep": "20min",
+        "price": "120.00",
+        "delivery": "10min",
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo, doloremque. Commodi laudantium beatae odit ullam reiciendis ea, totam facere saepe.",
+        "status": ""
+    },
+    {
+        "id": 3,
+        "main_img": "./images/menu_cordon.jpg",
+        "thumb_img": "./images/menu_cordon.jpg",
+        "title": "Cordon Bleu",
+        "prep": "20min",
+        "price": "120.00",
+        "delivery": "10min",
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo, doloremque. Commodi laudantium beatae odit ullam reiciendis ea, totam facere saepe.",
+        "status": "active"
+    }
+]

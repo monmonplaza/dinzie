@@ -1,6 +1,10 @@
 .banner {
   min-height: 100vh;
   overflow: hidden;
+
+  .cartIcon__wrapper {
+    position: relative;
+  }
   &__wrapper {
     min-height: inherit;
     grid-template-columns: 1fr 1fr;
@@ -40,7 +44,6 @@
     margin-bottom: 2rem;
     color: $yellow;
     text-transform: capitalize;
-    
   }
 
   &__body {
@@ -80,7 +83,6 @@
   }
 }
 
-
 .qr__modal {
   display: none;
   justify-content: center;
@@ -90,12 +92,12 @@
   width: 100%;
   top: 0;
   left: 0;
-  background-color: rgba(0,0,0,0.5);
+  background-color: rgba(0, 0, 0, 0.5);
   &__main {
     max-width: 40rem;
     min-height: 40rem;
     background-color: $light;
-    border-radius: .5rem;
+    border-radius: 0.5rem;
     text-align: center;
     padding: 3rem;
     h3 {
@@ -113,11 +115,29 @@
       border: none;
       background-color: $orange;
       color: $light;
-      &:hover  {
-        background-color:darken($orange, 2 ) ;
+      &:hover {
+        background-color: darken($orange, 2);
       }
     }
   }
+}
+
+.badge {
+  position: absolute;
+  bottom: 2.5rem;
+  right: -0.5rem;
+  height: 2rem;
+  width: 2rem;
+  justify-content: center;
+  align-items: center;
+  background-color: red;
+  border-radius: 50%;
+  font-size: 1rem;
+  color: $light;
+  display: none;
+}
+.badge.show {
+  display: flex;
 }
 
 .qr__modal.open {

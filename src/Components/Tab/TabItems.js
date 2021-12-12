@@ -1,10 +1,10 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import MsgSuccess from './MsgSuccess';
-const TabItems = ({ saveToObject, data, clickIsActive, index, isActiveTab }) => {
-    const { cart, setCartItems } = saveToObject;
+import { MdAddShoppingCart } from 'react-icons/md'
+const TabItems = ({ data, clickIsActive, index, isActiveTab }) => {
     const [msgShow, setMsgShow] = React.useState(false);
-    const [order, setOrder] =React.useState(0)
+    // const [totalOrder, setTotalOrder] = React.useState('')
 
     function handleMsgShow() {
         setMsgShow(!msgShow);
@@ -13,25 +13,65 @@ const TabItems = ({ saveToObject, data, clickIsActive, index, isActiveTab }) => 
         }, 2000)
     }
 
-    function totalOrder (e) {
-        const itemPrice = Number(e.target.parentElement.querySelector('.food__price').innerHTML)
-        setOrder(prev => prev + itemPrice)
+    function getOrder() {
+
+        let orders = [];
+        if (localStorage.getItem('orders')) {
+            orders = JSON.parse(localStorage.getItem('orders'));
+        }
+
+        return orders
     }
+
+    // function computeTotal() {
+
+    //     let orders = getOrder();
+
+    //     let totalOrder = '';
+    //     orders.forEach((order) => {
+    //         let totalOrder = totalOrder + Number(order.price);
+    //     })
+
+    // }
+
+    // computeTotal()
+
+
+    function addOrderToLocalstorage(e) {
+        const ordersObj = {
+            name: e.target.parentElement.querySelector('#foodTitle').innerHTML,
+            price: e.target.parentElement.querySelector('#foodPrice').innerHTML
+        }
+
+        let orders = getOrder();
+
+        // if (localStorage.getItem('orders')) {
+        //     orders = JSON.parse(localStorage.getItem('orders'));
+        // }
+
+
+        if (ordersObj) {
+            orders.push({ 'name': ordersObj.name, 'price': ordersObj.price });
+            localStorage.setItem('orders', JSON.stringify(orders));
+        }
+
+
+
+
+
+    }
+
+
+
+
+
 
     const handleAddCart = (e) => {
-        const orders = {
-            name: e.target.parentElement.querySelector('.food__title').innerHTML,
-            price: e.target.parentElement.querySelector('.food__price').innerHTML
-        }
-       
-        setCartItems([...cart, orders])
+        addOrderToLocalstorage(e);
+        handleMsgShow();
 
-        totalOrder(e);
-       
-        
-        handleMsgShow ();
-        
     }
+
 
     return (
         <>
@@ -41,9 +81,10 @@ const TabItems = ({ saveToObject, data, clickIsActive, index, isActiveTab }) => 
                 id={"tab-" + data.id + "-menu"}
                 key={index}
             >
+
                 <img src={data.thumb_img} alt="" />
                 <div className="menu__nav__item__info">
-                    <h3 className="food__title">{data.title}</h3>
+                    <h3 className="food__title" id="foodTitle">{data.title}</h3>
                     <ul className="food__rating">
                         <li><i className="fas fa-star"></i></li>
                         <li><i className="fas fa-star"></i></li>
@@ -51,16 +92,16 @@ const TabItems = ({ saveToObject, data, clickIsActive, index, isActiveTab }) => 
                         <li><i className="fas fa-star"></i></li>
                     </ul>
                     <ul className="food__data">
-                        <li><i className="fas fa-clock"></i> {data.info[0].prep}</li>
-                        <li><i className="fas fa-dollar"></i> <span className="food__price"> {data.info[0].price}</span></li>
+                        <li><i className="fas fa-clock"></i> {data.prep}</li>
+                        <li><i className="fas fa-dollar"></i> <span className="food__price" id="foodPrice"> {data.price}</span></li>
                     </ul>
                     <Link to="/"
                         className="btn btn--orange"
                         onClick={handleAddCart}
-                    >Add to Card</Link>
+                    ><MdAddShoppingCart /></Link>
                 </div>
             </div>
-            <MsgSuccess msgShow= {msgShow} />
+            <MsgSuccess msgShow={msgShow} />
         </>
     )
 

@@ -1,17 +1,28 @@
 import React from 'react'
-import { tabData } from './Data'
-
+// import { tabData } from './Data'
 import TabItems from './TabItems';
 const Tab = ({ addToCart }) => {
 
   const [isActive, setIsActive] = React.useState(0);
   const [isMenuActive, setIsMenuActive] = React.useState(0)
-
+  const [MenuData, setMenuData] = React.useState([]);
 
   const handleIsActive = (index) => {
     setIsActive(index)
     setIsMenuActive(index)
   }
+
+
+  React.useEffect(() => {
+    async function getMenu() {
+      let response = await fetch('https://demo.frontlinebusiness.com.ph/dev/JSON/menu.json');
+      let list = await response.json();
+      setMenuData(list);
+    }
+
+    getMenu();
+  }, [])
+
 
   return (
     <>
@@ -20,10 +31,10 @@ const Tab = ({ addToCart }) => {
           <div className="menu__nav">
             <div className="menu__nav__wrapper">
               {
-                tabData.map((data, index) => {
+                MenuData.map((data, index) => {
                   return (
                     <TabItems
-                      saveToObject={addToCart}
+
                       data={data}
                       clickIsActive={handleIsActive}
                       index={index}
@@ -38,7 +49,7 @@ const Tab = ({ addToCart }) => {
 
           <div className="menu__main">
             <div className="menu__main__wrapper">
-              {tabData.map((data, index) => {
+              {MenuData.map((data, index) => {
                 return (
                   // <div className={"menu__main__item " + data.status } id={"tab-" + data.id + "-menu"} key={key}>
                   <div className={(isMenuActive === index) ? "menu__main__item active" : "menu__main__item"} id={"tab-" + data.id + "-menu"} key={index}>
@@ -52,8 +63,6 @@ const Tab = ({ addToCart }) => {
                   </div>
                 )
               })}
-
-
             </div>
           </div>
         </div>

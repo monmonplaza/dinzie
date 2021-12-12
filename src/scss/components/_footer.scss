@@ -1,8 +1,13 @@
 .footer {
-  background-color: darken($yellow,15);
+  padding: 2rem 0;
   &__content {
+    img {
+      margin-bottom: 1rem;
+    }
     text-align: center;
     padding: 1rem 0;
-    color: $light
+    p {
+      font-size: 1.2rem;
+    }
   }
 }

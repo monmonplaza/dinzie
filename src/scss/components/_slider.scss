@@ -2,7 +2,7 @@
   min-height: 100vh;
   &__main {
     button.slick-arrow {
-      display: none!important;
+      display: none !important;
     }
   }
   &__item {
@@ -33,26 +33,34 @@
       }
       .rating {
         display: flex;
-        margin-bottom: 3rem;
+        margin: 1rem 0 2rem;
         li {
           margin-right: 0.5rem;
           color: $yellow;
         }
       }
 
-      .meta {
-        display: flex;
-        max-width: 37rem;
-        margin-bottom: 3rem;
-        li {
-          margin: 0 1rem;
-          text-align: center;
-        }
-      }
-
       .description {
         margin-bottom: 3rem;
         max-width: 43rem;
+        line-height: 1.6;
+        text-align: justify;
+      }
+    }
+  }
+
+  .metadata {
+    display: flex;
+    width: 50%;
+    flex-wrap: wrap;
+    gap: 10px 20px;
+    margin-bottom: 2rem;
+    li {
+      display: flex;
+      align-items: center;
+      svg {
+        margin-right: 1rem;
+        font-size: 2rem;
       }
     }
   }
@@ -84,7 +92,7 @@
   }
   &__navItem:hover {
     img {
-     transform: scale(1.1);
+      transform: scale(1.1);
     }
   }
 }

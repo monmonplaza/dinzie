@@ -1,0 +1,57 @@
+[
+    {
+        "id": 0,
+        "main_img": "./images/best_seller_1.jpg",
+        "thumb_img": "./images/best_seller_1.jpg",
+        "title": "Balatong",
+        "prep": "20min",
+        "price": "120.00",
+        "delivery": "10min",
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo, doloremque. Commodi laudantium beatae odit ullam reiciendis ea, totam facere saepe.",
+        "status": ""
+    },
+    {
+        "id": 1,
+        "main_img": "./images/best_seller_2.jpg",
+        "thumb_img": "./images/best_seller_2.jpg",
+        "title": "Gimbap",
+        "prep": "20min",
+        "price": "120.00",
+        "delivery": "10min",
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo, doloremque. Commodi laudantium beatae odit ullam reiciendis ea, totam facere saepe.",
+        "status": ""
+    },
+    {
+        "id": 2,
+        "main_img": "./images/best_seller_3.jpg",
+        "thumb_img": "./images/best_seller_3.jpg",
+        "title": "Buchi",
+        "prep": "20min",
+        "price": "120.00",
+        "delivery": "10min",
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo, doloremque. Commodi laudantium beatae odit ullam reiciendis ea, totam facere saepe.",
+        "status": ""
+    },
+    {
+        "id": 3,
+        "main_img": "./images/best_seller_4.jpg",
+        "thumb_img": "./images/best_seller_4.jpg",
+        "title": "Cordon Bleu",
+        "prep": "20min",
+        "price": "120.00",
+        "delivery": "10min",
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo, doloremque. Commodi laudantium beatae odit ullam reiciendis ea, totam facere saepe.",
+        "status": "active"
+    },
+    {
+        "id": 5,
+        "main_img": "./images/best_seller_4.jpg",
+        "thumb_img": "./images/best_seller_4.jpg",
+        "title": "Cordon Bleu",
+        "prep": "20min",
+        "price": "120.00",
+        "delivery": "10min",
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo, doloremque. Commodi laudantium beatae odit ullam reiciendis ea, totam facere saepe.",
+        "status": "active"
+    }
+]

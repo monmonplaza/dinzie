@@ -38,7 +38,6 @@ body {
   color: $dark;
   line-height: 1.4;
   font-family: "helvetica_neue", sans-serif;
-  
 }
 .container {
   max-width: 120rem;
@@ -49,10 +48,10 @@ body {
 .snap__parent {
   max-height: 100vh;
   overflow-y: scroll;
-  scroll-snap-points-y: repeat(100vh);
+  //scroll-snap-points-y: repeat(100vh);
   // scroll-snap-type: y mandatory;
   .snap__child {
-    scroll-snap-align: start;
+    // scroll-snap-align: start;
     min-height: 100vh;
   }
 }

@@ -25,7 +25,7 @@
     "deploy": "gh-pages -d build"
    
   },
-  "homepage": "https://monmonplaza.github.io/dinzie",
+  "homepage": "https://monmonplaza.github.io/dinzie/",
   "eslintConfig": {
     "extends": [
       "react-app",

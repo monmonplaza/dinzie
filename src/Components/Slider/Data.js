@@ -1,8 +1,8 @@
 export const sliderData = [
   {
     id: 1,
-    main_img: "../images/noodles_canton.jpg",
-    thumb_img: "../images/noodles_canton.jpg",
+    main_img: "./images/noodles_canton.jpg",
+    thumb_img: "./images/noodles_canton.jpg",
     title: "Special Pansit Canton",
     info: [
       {
@@ -17,8 +17,8 @@ export const sliderData = [
 
   {
     id: 2,
-    main_img: "../images/ulam_cordon.jpg",
-    thumb_img: "../images/ulam_cordon.jpg",
+    main_img: "./images/ulam_cordon.jpg",
+    thumb_img: "./images/ulam_cordon.jpg",
     title: "Chicken Cordon Bleu",
     info: [
       {
@@ -33,8 +33,8 @@ export const sliderData = [
 
   {
     id: 3,
-    main_img: "../images/appetizer_gimbap.jpg",
-    thumb_img: "../images/appetizer_gimbap.jpg",
+    main_img: "./images/appetizer_gimbap.jpg",
+    thumb_img: "./images/appetizer_gimbap.jpg",
     title: "Korean Gimbap",
     info: [
       {
@@ -49,8 +49,8 @@ export const sliderData = [
 
   {
     id: 4,
-    main_img: "../images/dessert_pilipit.jpg",
-    thumb_img: "../images/dessert_pilipit.jpg",
+    main_img: "./images/dessert_pilipit.jpg",
+    thumb_img: "./images/dessert_pilipit.jpg",
     title: "Pilipit",
     info: [
       {
@@ -64,8 +64,8 @@ export const sliderData = [
   },
   {
     id: 5,
-    main_img: "../images/best_seller_1.jpg",
-    thumb_img: "../images/best_seller_1.jpg",
+    main_img: "./images/best_seller_1.jpg",
+    thumb_img: "./images/best_seller_1.jpg",
     title: "Japchae",
     info: [
       {
@@ -79,8 +79,8 @@ export const sliderData = [
   },
   {
     id: 6,
-    main_img: "../images/noodles_palabok.jpg",
-    thumb_img: "../images/noodles_palabok.jpg",
+    main_img: "./images/noodles_palabok.jpg",
+    thumb_img: "./images/noodles_palabok.jpg",
     title: "Pancit Palabok",
     info: [
       {

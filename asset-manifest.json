@@ -1,21 +1,21 @@
 {
   "files": {
     "main.css": "/dinzie/static/css/main.ccf09d2b.chunk.css",
-    "main.js": "/dinzie/static/js/main.3e22add6.chunk.js",
-    "main.js.map": "/dinzie/static/js/main.3e22add6.chunk.js.map",
+    "main.js": "/dinzie/static/js/main.5593c479.chunk.js",
+    "main.js.map": "/dinzie/static/js/main.5593c479.chunk.js.map",
     "runtime-main.js": "/dinzie/static/js/runtime-main.9ae08ac6.js",
     "runtime-main.js.map": "/dinzie/static/js/runtime-main.9ae08ac6.js.map",
-    "static/js/2.9a661150.chunk.js": "/dinzie/static/js/2.9a661150.chunk.js",
-    "static/js/2.9a661150.chunk.js.map": "/dinzie/static/js/2.9a661150.chunk.js.map",
+    "static/js/2.3a73ae2a.chunk.js": "/dinzie/static/js/2.3a73ae2a.chunk.js",
+    "static/js/2.3a73ae2a.chunk.js.map": "/dinzie/static/js/2.3a73ae2a.chunk.js.map",
     "index.html": "/dinzie/index.html",
     "static/css/main.ccf09d2b.chunk.css.map": "/dinzie/static/css/main.ccf09d2b.chunk.css.map",
-    "static/js/2.9a661150.chunk.js.LICENSE.txt": "/dinzie/static/js/2.9a661150.chunk.js.LICENSE.txt",
+    "static/js/2.3a73ae2a.chunk.js.LICENSE.txt": "/dinzie/static/js/2.3a73ae2a.chunk.js.LICENSE.txt",
     "static/media/App.scss": "/dinzie/static/media/HelveticaNeue.2fdaa09f.woff"
   },
   "entrypoints": [
     "static/js/runtime-main.9ae08ac6.js",
-    "static/js/2.9a661150.chunk.js",
+    "static/js/2.3a73ae2a.chunk.js",
     "static/css/main.ccf09d2b.chunk.css",
-    "static/js/main.3e22add6.chunk.js"
+    "static/js/main.5593c479.chunk.js"
   ]
 }

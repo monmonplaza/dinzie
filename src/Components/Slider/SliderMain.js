@@ -11,8 +11,6 @@ const SliderMain = () => {
   const [nav1, setNav1] = React.useState(null);
   const [nav2, setNav2] = React.useState(null);
 
-  console.log(isMobile);
-
   const slider1 = React.useRef(null);
   const slider2 = React.useRef(null);
 

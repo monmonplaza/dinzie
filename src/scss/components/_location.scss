@@ -94,6 +94,9 @@
   background-color: $light-d;
   background-color: $orange;
   color: $light;
+  @include media-query($mobile) {
+    margin-top: 10rem;
+  }
   &__grid {
     display: grid;
     grid-template-columns: 2.5fr 1fr 1fr 1fr 1fr;
@@ -157,15 +160,21 @@
   &__main {
     width: 80rem;
     max-width: 100%;
-
     background-color: $light;
     border-radius: 0.5rem;
     text-align: center;
     padding: 3rem;
+    @include media-query($mobile) {
+      margin: 1rem;
+    }
+
     iframe {
       width: 100%;
       min-height: 60rem;
       border: 1px solid #ccc;
+      @include media-query($mobile) {
+        width: 40rem;
+      }
     }
   }
 

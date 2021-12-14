@@ -1,21 +1,21 @@
 {
   "files": {
-    "main.css": "/dinzie/static/css/main.268a33ed.chunk.css",
-    "main.js": "/dinzie/static/js/main.a8031017.chunk.js",
-    "main.js.map": "/dinzie/static/js/main.a8031017.chunk.js.map",
+    "main.css": "/dinzie/static/css/main.eb033e20.chunk.css",
+    "main.js": "/dinzie/static/js/main.40859440.chunk.js",
+    "main.js.map": "/dinzie/static/js/main.40859440.chunk.js.map",
     "runtime-main.js": "/dinzie/static/js/runtime-main.9ae08ac6.js",
     "runtime-main.js.map": "/dinzie/static/js/runtime-main.9ae08ac6.js.map",
-    "static/js/2.049868c7.chunk.js": "/dinzie/static/js/2.049868c7.chunk.js",
-    "static/js/2.049868c7.chunk.js.map": "/dinzie/static/js/2.049868c7.chunk.js.map",
+    "static/js/2.af1838d8.chunk.js": "/dinzie/static/js/2.af1838d8.chunk.js",
+    "static/js/2.af1838d8.chunk.js.map": "/dinzie/static/js/2.af1838d8.chunk.js.map",
     "index.html": "/dinzie/index.html",
-    "static/css/main.268a33ed.chunk.css.map": "/dinzie/static/css/main.268a33ed.chunk.css.map",
-    "static/js/2.049868c7.chunk.js.LICENSE.txt": "/dinzie/static/js/2.049868c7.chunk.js.LICENSE.txt",
+    "static/css/main.eb033e20.chunk.css.map": "/dinzie/static/css/main.eb033e20.chunk.css.map",
+    "static/js/2.af1838d8.chunk.js.LICENSE.txt": "/dinzie/static/js/2.af1838d8.chunk.js.LICENSE.txt",
     "static/media/App.scss": "/dinzie/static/media/HelveticaNeue.2fdaa09f.woff"
   },
   "entrypoints": [
     "static/js/runtime-main.9ae08ac6.js",
-    "static/js/2.049868c7.chunk.js",
-    "static/css/main.268a33ed.chunk.css",
-    "static/js/main.a8031017.chunk.js"
+    "static/js/2.af1838d8.chunk.js",
+    "static/css/main.eb033e20.chunk.css",
+    "static/js/main.40859440.chunk.js"
   ]
 }

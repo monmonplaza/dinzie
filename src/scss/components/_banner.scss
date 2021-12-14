@@ -1,13 +1,19 @@
 .banner {
   min-height: 100vh;
   overflow: hidden;
-
+  @include media-query($mobile) {
+    overflow: unset;
+  }
   .cartIcon__wrapper {
     position: relative;
   }
   &__wrapper {
     min-height: inherit;
     grid-template-columns: 1fr 1fr;
+    @include media-query($mobile) {
+      grid-template-columns: 1fr;
+      width: 100%;
+    }
   }
   &__content {
     flex-direction: column;
@@ -20,6 +26,10 @@
       left: 70%;
       transform: translate(-50%, -50%);
       width: 100%;
+      @include media-query($mobile) {
+        left: 50%;
+        padding: 1rem;
+      }
     }
 
     .icon__QR {
@@ -28,6 +38,9 @@
       top: 50%;
       font-size: 4rem;
       color: $orange;
+      @include media-query($mobile) {
+        display: none;
+      }
     }
     .icon__cart {
       font-size: 3rem;
@@ -37,7 +50,7 @@
 
   &__header {
     max-width: 100rem;
-    font-size: 12rem;
+    font-size: clamp(6rem, 5vw, 12rem);
     font-family: "Poppins", sans-serif;
     font-weight: 900;
     line-height: 1;
@@ -50,6 +63,9 @@
     max-width: 55rem;
     margin-bottom: 3rem;
     font-size: 2rem;
+    @include media-query($mobile) {
+      font-size: 1.6rem;
+    }
   }
 
   &__top {
@@ -58,14 +74,31 @@
     left: 4rem;
     display: flex;
     justify-content: space-between;
+
     width: 93%;
+    @include media-query($mobile) {
+      left: 1.5rem;
+      width: 90%;
+      align-items: center;
+    }
+    img {
+      @include media-query($mobile) {
+        width: 20rem;
+      }
+    }
   }
   .icon_socialmedia {
     position: absolute;
     right: 2rem;
     bottom: 4rem;
+    @include media-query($mobile) {
+      display: flex;
+    }
     li {
       margin-bottom: 2rem;
+      @include media-query($mobile) {
+        margin-left: 2rem;
+      }
       a {
         font-size: 2.5rem;
         color: $lightgray;
@@ -74,6 +107,9 @@
   }
 
   &__img {
+    @include media-query($mobile) {
+      display: none;
+    }
     img {
       object-fit: cover;
       display: block;

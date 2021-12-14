@@ -11,6 +11,9 @@
   &__item__grid {
     overflow: hidden;
     grid-template-columns: 1fr 1fr;
+    @include media-query($mobile) {
+      grid-template-columns: 1fr;
+    }
   }
 
   &__item__img {
@@ -18,6 +21,9 @@
       width: 100%;
       height: 70rem;
       object-fit: cover;
+      @include media-query($mobile) {
+        height: 40rem;
+      }
     }
   }
 
@@ -27,6 +33,10 @@
     align-items: center;
     &__wrapper {
       max-width: 70rem;
+      @include media-query($mobile) {
+        padding: 1rem;
+      }
+
       h2 {
         font-size: 4rem;
         font-weight: 800;
@@ -69,6 +79,9 @@
     width: 60vw;
     margin: 0 auto;
     padding: 2rem 0;
+    @include media-query($mobile) {
+      width: 75vw;
+    }
     .slick-list {
       padding: 0 !important;
     }
@@ -105,6 +118,9 @@
   font-size: 3rem;
   color: $orange;
   display: block;
+  @include media-query($mobile) {
+    font-size: 2rem;
+  }
 }
 .slick-next::before {
   // font-family: "Font Awesome 5 Free";
@@ -112,6 +128,9 @@
   font-size: 3rem;
   color: $orange;
   display: block;
+  @include media-query($mobile) {
+    font-size: 2rem;
+  }
 }
 
 .slick-next,

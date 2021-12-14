@@ -47,7 +47,7 @@ body {
 
 .snap__parent {
   max-height: 100vh;
-  overflow-y: scroll;
+  // overflow-y: scroll;
   //scroll-snap-points-y: repeat(100vh);
   // scroll-snap-type: y mandatory;
   .snap__child {

@@ -12,6 +12,9 @@
     grid-template-columns: 25rem 1fr;
     min-height: 80rem;
     grid-gap: 2rem;
+    @include media-query($mobile) {
+      grid-template-columns: 1fr;
+    }
   }
 
   &__nav {
